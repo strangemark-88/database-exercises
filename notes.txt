@@ -1,0 +1,17 @@
+CREATE DATABASE database_name;
+USE databas_name;
+CREATE USER 'username'@'hostname' IDENTIFIED BY 'password';
+GRANT permissions ON database_name.table_name TO 'username'@'hostname';
+CREATE TABLE table_name IF NOT EXISTS(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    field_name_2 TYPE,
+    field_name_3 TYPE,
+    PRIMARY KEY (id)
+);
+
+SHOW TABLES;
+DESCRIBE table_name;
+SHOW CREATE TABLE table_name;
+DROP USER 'username'@'hostname';
+DROP TABLE table_name [IF EXISTS];
+DROP DATABASE database_name;
