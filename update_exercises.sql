@@ -24,14 +24,14 @@ SELECT * FROM albums WHERE artist = 'Michael Jackson';
 -- Add SELECT statements after each UPDATE so you can see the results of your handiwork.
 
 UPDATE albums SET sales = sales * 10;
-
+SELECT 'All sales times 10'
 SELECT * FROM albums;
 
 UPDATE albums SET release_date = release_date - 100 WHERE release_date < 1980;
-
+SELECT 'Change albums from before 1980 to the 1800s'
 SELECT * FROM albums WHERE release_date < 1980;
 
 
 UPDATE albums SET artist = 'Peter Jackson' WHERE artist = 'Michael Jackson';
-
+SELECT 'Change Michael Jackson to Peter Jackson'
 SELECT * FROM albums WHERE artist = 'Peter Jackson';
