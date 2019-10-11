@@ -16,7 +16,7 @@ SELECT genre AS 'Nevermind genre' FROM albums WHERE name = 'Nevermind';
 
 -- Which albums were released in the 1990s
 
-Select name AS 'Albums released in the 90s' From albums WHERE release_date BETWEEN 1990 AND 1999;
+Select Name, Artist, release_date  AS 'Release Year' From albums WHERE release_date BETWEEN 1990 AND 1999;
 
 -- Which albums had less than 20 million certified sales
 
